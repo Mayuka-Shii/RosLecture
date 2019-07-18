@@ -6,6 +6,9 @@ https://sites.google.com/site/robotlabo/time-tracker/ros
 ６自由度ロボットアームを例に、マニピュレータの構成方法を説明する。
 ６自由度ロボットアームの構成例は下記の図の通り。
 
+
+
+
 <img src ="https://41417c4a-a-62cb3a1a-s-sites.googlegroups.com/site/robotlabo/time-tracker/ros/ros-manipulator/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88%E3%82%991.jpg?attachauth=ANoY7cojRQ56-4_rSUK-UCtWPLiSDPjIUu4INzzZgjFTSUCthAtkWJB4kXF4grOaS7BArtIcPx5ag2cQdVXG8IZiNvdwGiBvA8TsTHr6sUbUH_ysRL_duS7u5JSQTUqirrPo-i6Rmejy2cIZlQojGbKqxCMLQaNbFiAhf5_k1hhoyPp8bAKHT4znw3ULB-LF9ndJkLGc63ULJqz4va1p1FAuZrYTS5rAmoC449coriVu-GGDYMJ94MMQbdMPklpIlGPYznv-FC26WAX52QfL3klQxcMe6_qEcxI21f_qA5kTi61iofF-5oirNOTnHv1V_54Va6hjLo8Y&attredirects=0">
 
 ## ロボットアームのシミュレーション起動コマンド例
@@ -30,7 +33,9 @@ Rviz上で差動２輪移動ロボットのシミュレーション画面を立�
 １つ目のターミナル
 $ roslaunch diff_mobile_robot diff_mobile_robot.launch
 ２つ目のターミナル
-$ rosrun diff_mobile_robot key_teleop.py 
+$ roslaunch diff_mobile_robot diff_mobile_gazebo.launch
+３つ目のターミナル
+$ rosrun diff_mobile_robot key_teleop.py
 ```
 ２つ目のターミナルのコマンドを実行した画面。
 <img src="https://41417c4a-a-62cb3a1a-s-sites.googlegroups.com/site/robotlabo/time-tracker/ros/gazebo-mobilerobot/key_teleop.png?attachauth=ANoY7coWcJZb_cTseQZu9l-tIUIVowpB7bkydU2Pijcywu8MKnBcdOSwSEYMfiJf9XvI7iKwy3mZoQGtiTixO6dbBkOGCZnXcLk1VhoCCjzyULPKOt9HCgXV_f5pd_jmjsYNU3Vfyi9CMTzq6UpO1vya741BHzgj95UxtJt0HM7YUv0JScHaqB3d_-vWt-_a1DMMIvJLvA1hxVoWCxcvYvEDh16xOQ7JD9Vs9-Cm5t106vRBPkPH_qNyDahaCkaZj9fLMX6QhIPLP88-HCsQNZAJkrBTZ6qj_g%3D%3D&attredirects=0">
