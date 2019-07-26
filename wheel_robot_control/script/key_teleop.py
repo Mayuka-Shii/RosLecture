@@ -63,7 +63,7 @@ class KeyTeleop(object):
       Q   W   E
       A   S   D
       Z   X   Z
-    T/B :   increase/decrease max speeds 10%
+    T/B :   increase/decrease max speed10%
     Y/N :   increase/decrease only linear speed 10%
     U/M :   increase/decrease only angular speed 10%
     anything else : stop
@@ -108,8 +108,8 @@ class KeyTeleop(object):
       return
     twist = Twist()
     cmd  = self.speed*self.command
-    twist.linear.x = cmd[0]
-    twist.angular.z = cmd[1]
+    twist.linear.x = cmd[0]*3
+    twist.angular.z = cmd[1]*3
     self.pub_twist.publish(twist)
  
   # Get input from the terminal
